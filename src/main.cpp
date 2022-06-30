@@ -6,7 +6,7 @@ Board: DevKitV1
 Compilador: Arduino IDE 1.8.19
 
 Autor: 
-Data: Fevereiro de 2021 
+Data: 
 
 ================================================================================= */
 #include <Arduino.h>
@@ -53,6 +53,7 @@ void loop()
   if(millis()-time_upt >= 741)
   {
     Serial.println(analogRead(adc_in));
+    
     time_upt = millis();
   }
   
@@ -63,7 +64,7 @@ float pid_control(float meas, float set_point)
   static float  last_meas;
   
   static float integral;
-  
+
   float         error_meas, 
                 proportional,
                 derivative;
