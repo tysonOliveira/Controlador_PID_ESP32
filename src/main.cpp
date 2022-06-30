@@ -5,7 +5,7 @@ ESP-WROOM-32
 Board: DevKitV1
 Compilador: Arduino IDE 1.8.19
 
-Autor: Eng. Wagner Rambo
+Autor: 
 Data: Fevereiro de 2021 
 
 ================================================================================= */
@@ -63,6 +63,7 @@ float pid_control(float meas, float set_point)
   static float  last_meas;
   
   static float integral;
+  
   float         error_meas, 
                 proportional,
                 derivative;
